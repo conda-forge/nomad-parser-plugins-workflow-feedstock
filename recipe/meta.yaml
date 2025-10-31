@@ -1,5 +1,5 @@
 {% set name = "nomad-parser-plugins-workflow" %}
-{% set version = "1.1.10" %}
+{% set version = "1.1.11" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/nomad_parser_plugins_workflow-{{ version }}.tar.gz
-  sha256: dd1eb3d937242b88e6dfdb137b24af244c3d19b4ce7505841302241d4f84945e
+  sha256: 37716b34ed3854a218b84a888c0bc352e8127c97df88080a117b3f578f3fdc22
 
 build:
   noarch: python
@@ -31,7 +31,7 @@ requirements:
     - phonopy >=2.35,<=2.38
     - h5py >=3.11.0
     - pydantic >=1.10.8
-    - netcdf4
+    - netcdf4 <=1.7.2
     - h5netcdf
 
 test:
