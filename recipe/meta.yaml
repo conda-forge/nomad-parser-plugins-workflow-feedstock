@@ -1,5 +1,5 @@
 {% set name = "nomad-parser-plugins-workflow" %}
-{% set version = "1.1.14" %}
+{% set version = "1.2.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/nomad_parser_plugins_workflow-{{ version }}.tar.gz
-  sha256: 05dd22f9c3cbe9268e1c694f4904cd69249d7233c5800a5680807ca627de41c1
+  sha256: 359553d8ca261a7bd310f99f108086497dae5ca80adbfe826bb7d3e96bcc531d
 
 build:
   noarch: python
