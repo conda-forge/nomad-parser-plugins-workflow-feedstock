@@ -43,7 +43,9 @@ tests:
       imports:
         - workflowparsers
       pip_check: true
-      python_version: ${{ python_min }}
+      python_version:
+        - ${{ python_min }}
+        - "*"
 
 about:
   summary: Collection of NOMAD parsers for workflow engines.
